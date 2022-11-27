@@ -1,3 +1,4 @@
+![Tests](https://github.com/drichelson/gokeyword/actions/workflows/main.yml/badge.svg)
 # gokeyword
 A static analysis tool for finding the go keyword in source code
 It was designed to be included in [golangci-lint](https://github.com/golangci/golangci-lint)
