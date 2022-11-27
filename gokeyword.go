@@ -10,11 +10,12 @@ import (
 )
 
 const (
+	FlagDetails = "details"
+
 	goKeywordName        = "gokeyword"
 	goKeywordErrorMsg    = "detected use of go keyword: %s"
 	goKeywordDescription = "detects presence of go keyword"
 	defaultDetails       = "no details provided"
-	FlagDetails          = "details"
 )
 
 func New() *analysis.Analyzer {
@@ -41,10 +42,4 @@ func run(pass *analysis.Pass) (interface{}, error) {
 		}
 	})
 	return nil, nil
-}
-
-func gonogo() {
-	go func() {
-		// do something
-	}()
 }
